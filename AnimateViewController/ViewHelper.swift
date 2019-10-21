@@ -46,6 +46,13 @@ enum VerticalLocation: String {
         layer.mask = mask
     }
     
+    
+    func chnageBackgrounf(color : UIColor)
+    {
+        layer.backgroundColor = color.cgColor
+    }
+    
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
